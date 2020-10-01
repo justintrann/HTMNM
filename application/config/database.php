@@ -128,14 +128,9 @@ $db['default'] = array(
 
 $db['default'] = array(
 	'dsn'   => '',
-	/*
 	'hostname' => getenv("localhost"),
 	'username' => getenv("azure"),
 	'password' => getenv("6#vWHD_$"),
-	'database' => getenv("stock"),*/
-	'hostname' => getenv("localhost"),
-	'username' => getenv("justin"),
-	'password' => getenv("Stevejobs123"),
 	'database' => getenv("stock"),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
