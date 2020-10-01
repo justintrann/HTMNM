@@ -99,7 +99,7 @@ $db['default'] = array(
 */
 
 #Test
-
+/*
 
 $db['default'] = array(
 	'dsn'	=> '',
@@ -122,15 +122,15 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-
+*/
 
 /*Snippet from database.php*/
-/*
+
 $db['default'] = array(
 	'dsn'   => '',
 	'hostname' => getenv("localhost"),
-	'username' => getenv("justin"),
-	'password' => getenv("Stevejobs123"),
+	'username' => getenv("azure"),
+	'password' => getenv("6#vWHD_$"),
 	'database' => getenv("stock"),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -154,7 +154,7 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-*/
+
 /*Snippet for PHP (PDO)
 <?php
 define('CONN_HOST', getenv("DB_HOST"));
