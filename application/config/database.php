@@ -70,6 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+
+/*
 $active_group = 'default';
 $query_builder = TRUE;
 
@@ -94,3 +96,44 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+*/
+/*Snippet from database.php*/
+$db['production'] = array(
+	'dsn'   => '',
+	'hostname' => getenv("localhost"),
+	'username' => getenv("justin"),
+	'password' => getenv("Stevejobs123"),
+	'database' => getenv("stock"),
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => FALSE,
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => [
+		'ssl_key'    => NULL,
+		'ssl_cert'   => NULL,
+		'ssl_ca'     => '/home/site/wwwroot/cert/BaltimoreCyberTrustRoot.crt.pem',
+		'ssl_capath' => NULL,
+		'ssl_cipher' => NULL,
+		'ssl_verify' => FALSE
+	],
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+/*Snippet for PHP (PDO)*/
+<?php
+define('CONN_HOST', getenv("DB_HOST"));
+define('CONN_DATABASE', getenv("DB_NAME"));
+define('CONN_USER', getenv("DB_USER"));
+define('CONN_PASSWORD', getenv("DB_PWD"));
+define('CONN_OPTION', array(
+	PDO::MYSQL_ATTR_SSL_CA          =>     '/home/site/wwwroot/cert/BaltimoreCyberTrustRoot.crt.pem',
+	PDO::MYSQL_ATTR_INIT_COMMAND    => "SET NAMES utf8"
+));
