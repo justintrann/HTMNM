@@ -98,7 +98,7 @@ $db['default'] = array(
 );
 */
 /*Snippet from database.php*/
-$db['production'] = array(
+$db['default'] = array(
 	'dsn'   => '',
 	'hostname' => getenv("localhost"),
 	'username' => getenv("justin"),
