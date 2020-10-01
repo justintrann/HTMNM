@@ -127,7 +127,7 @@ $db['production'] = array(
 	'save_queries' => TRUE
 );
 
-/*Snippet for PHP (PDO)*/
+/*Snippet for PHP (PDO)
 <?php
 define('CONN_HOST', getenv("DB_HOST"));
 define('CONN_DATABASE', getenv("DB_NAME"));
@@ -137,3 +137,4 @@ define('CONN_OPTION', array(
 	PDO::MYSQL_ATTR_SSL_CA          =>     '/home/site/wwwroot/cert/BaltimoreCyberTrustRoot.crt.pem',
 	PDO::MYSQL_ATTR_INIT_COMMAND    => "SET NAMES utf8"
 ));
+*/
