@@ -127,12 +127,12 @@ $db['default'] = array(
 /*Snippet from database.php*/
 
 $db['default'] = array(
-	'dsn'   => 'MYSQLCONNSTR_localdb',
+	'dsn'   => '',
 	'hostname' => getenv("localhost"),
 	'username' => getenv("azure"),
 	'password' => getenv("6#vWHD_$"),
 	'database' => getenv("stock"),
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => FALSE,
