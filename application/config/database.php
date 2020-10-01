@@ -127,7 +127,7 @@ $db['default'] = array(
 /*Snippet from database.php*/
 
 $db['default'] = array(
-	'dsn'   => '',
+	'dsn'   => 'MYSQLCONNSTR_localdb',
 	'hostname' => getenv("localhost"),
 	'username' => getenv("azure"),
 	'password' => getenv("6#vWHD_$"),
@@ -154,26 +154,6 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 	
-
-	define('ENV_STR', 'MYSQLCONNSTR_localdb');
-
-$return = array('result' => false);
-
-if (isset($_SERVER[ENV_STR])) {
-    $connectStr = $_SERVER[ENV_STR];
-
-    $return['connection'] = array(
-        'host' => preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $connectStr),
-        'database' => preg_replace("/^.*Database=(.+?);.*$/", "\\1", $connectStr),
-        'user' => preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $connectStr),
-        'password' => preg_replace("/^.*Password=(.+?)$/", "\\1", $connectStr)
-    );
-
-    $return['result'] = true;
-}
-
-header('Content-Type: application/json; charset=utf-8');
-echo json_encode($return);
 );
 
 
