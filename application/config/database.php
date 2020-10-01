@@ -156,7 +156,7 @@ $db['default'] = array(
 );
 
 /*Snippet for PHP (PDO)*/
-<?php
+
 define('CONN_HOST', getenv("localhost"));
 define('CONN_DATABASE', getenv("stock"));
 define('CONN_USER', getenv("azure"));
