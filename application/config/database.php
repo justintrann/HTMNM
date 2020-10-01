@@ -155,14 +155,13 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
-/*Snippet for PHP (PDO)
+/*Snippet for PHP (PDO)*/
 <?php
-define('CONN_HOST', getenv("DB_HOST"));
-define('CONN_DATABASE', getenv("DB_NAME"));
-define('CONN_USER', getenv("DB_USER"));
-define('CONN_PASSWORD', getenv("DB_PWD"));
+define('CONN_HOST', getenv("localhost"));
+define('CONN_DATABASE', getenv("stock"));
+define('CONN_USER', getenv("azure"));
+define('CONN_PASSWORD', getenv("6#vWHD_$"));
 define('CONN_OPTION', array(
 	PDO::MYSQL_ATTR_SSL_CA          =>     '/home/site/wwwroot/cert/BaltimoreCyberTrustRoot.crt.pem',
 	PDO::MYSQL_ATTR_INIT_COMMAND    => "SET NAMES utf8"
 ));
-*/
