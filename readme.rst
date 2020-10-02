@@ -1,5 +1,5 @@
 ######################
-Super Admin Crednetial
+SuperAdmin Account
 ######################
 email: admin@admin.com
 password: password
